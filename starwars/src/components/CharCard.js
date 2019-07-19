@@ -18,6 +18,7 @@ const RWStats = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-size: 1.1rem;
 `;
 
 const CharCard = props => {
@@ -25,14 +26,26 @@ const CharCard = props => {
 
   return (
     <RWCard>
-      <h3>{char}</h3>
+      <h2>{char}</h2>
       <RWStats>
-        <p>Height: {height}</p>
-        <p>Mass: {mass}</p>
-        <p>Hair Color: {hair}</p>
-        <p>Skin Color: {skin}</p>
-        <p>Eye Color: {eyes}</p>
-        <p>Gender: {gender}</p>
+        <p>
+          <strong>Height:</strong> {height}
+        </p>
+        <p>
+          <strong>Mass:</strong> {mass}
+        </p>
+        <p>
+          <strong>Hair Color:</strong> {hair}
+        </p>
+        <p>
+          <strong>Skin Color:</strong> {skin}
+        </p>
+        <p>
+          <strong>Eye Color:</strong> {eyes}
+        </p>
+        <p>
+          <strong>Gender:</strong> {gender}
+        </p>
       </RWStats>
     </RWCard>
   );

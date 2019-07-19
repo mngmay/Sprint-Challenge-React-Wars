@@ -8,6 +8,7 @@ import "./App.css";
 const RWApp = styled.div`
   text-align: center;
   margin-top: 10px;
+  background-color: transparent;
 `;
 
 const RWHeader = styled.h1`
