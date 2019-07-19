@@ -1,12 +1,12 @@
 import React from "react";
 
 const Buttons = props => {
-  const { apiNext, apiPrev } = props;
+  const { nextPage, prevPage } = props;
 
   return (
     <div>
-      <button onClick={apiPrev}>Previous Page</button>
-      <button onClick={apiNext}>Next Page</button>
+      <button onClick={prevPage}>Previous Page</button>
+      <button onClick={nextPage}>Next Page</button>
     </div>
   );
 };

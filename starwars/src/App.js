@@ -47,14 +47,20 @@ const App = () => {
       .catch(err => {
         console.log("Error", err);
       });
-  }, []);
+  }, [api]);
 
   const nextPage = event => {
-    setApi(apiNext);
+    if (event) {
+      setApi(apiNext);
+      console.log("clicked next");
+    }
   };
 
   const prevPage = event => {
-    setApi(apiPrev);
+    if (event) {
+      setApi(apiPrev);
+      console.log("clicked prev");
+    }
   };
 
   return (
