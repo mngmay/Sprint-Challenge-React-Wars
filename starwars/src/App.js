@@ -50,17 +50,15 @@ const App = () => {
   }, [api]);
 
   const nextPage = event => {
-    if (event) {
-      setApi(apiNext);
-      console.log("clicked next");
-    }
+    event && setApi(apiNext);
+    // console.log("clicked next");
   };
 
   const prevPage = event => {
-    if (event) {
-      setApi(apiPrev);
-      console.log("clicked prev");
-    }
+    apiPrev === null
+      ? console.log("There is no prev page")
+      : event && setApi(apiPrev);
+    // console.log("clicked prev");
   };
 
   return (
