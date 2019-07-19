@@ -50,7 +50,9 @@ const App = () => {
   }, [api]);
 
   const nextPage = event => {
-    event && setApi(apiNext);
+    apiNext === null
+      ? console.log("There is no next page")
+      : event && setApi(apiNext);
     // console.log("clicked next");
   };
 
