@@ -2,7 +2,7 @@ import React from "react";
 import CharCard from "./CharCard";
 import styled from "styled-components";
 
-const SWGrid = styled.div`
+const RWGrid = styled.div`
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -15,7 +15,7 @@ function CharGrid({ data }) {
   //   console.log("grid data", data);
 
   return (
-    <SWGrid>
+    <RWGrid>
       {data.map(char => {
         return (
           <CharCard
@@ -25,10 +25,12 @@ function CharGrid({ data }) {
             mass={char.mass}
             hair={char.hair_color}
             skin={char.skin_color}
+            eyes={char.eye_color}
+            gender={char.gender}
           />
         );
       })}
-    </SWGrid>
+    </RWGrid>
   );
 }
 export default CharGrid;

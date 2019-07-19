@@ -1,7 +1,20 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CharGrid from "./components/CharGrid";
+import styled from "styled-components";
 import "./App.css";
+
+const RWApp = styled.div`
+  text-align: center;
+  margin-top: 10px;
+`;
+
+const RWHeader = styled.h1`
+  color: #443e3e;
+  text-shadow: 1px 1px 5px #fff;
+`;
+
+const RWSlogan = styled.h3``;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -25,10 +38,13 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
+    <RWApp>
+      <RWHeader>React Wars</RWHeader>
+      <RWSlogan>
+        Check out the stats of your favorite Star Wars characters
+      </RWSlogan>
       <CharGrid data={data} />
-    </div>
+    </RWApp>
   );
 };
 
