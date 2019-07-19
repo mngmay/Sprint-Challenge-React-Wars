@@ -16,7 +16,7 @@ const App = () => {
     axios
       .get(`https://swapi.co/api/people/`)
       .then(response => {
-        console.log("starwars api", response.data.results);
+        // console.log("starwars api", response.data.results);
         setData(response.data.results); //list of people objects
       })
       .catch(err => {

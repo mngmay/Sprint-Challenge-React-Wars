@@ -1,11 +1,21 @@
 import React from "react";
 import CharCard from "./CharCard";
+import styled from "styled-components";
+
+const SWGrid = styled.div`
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-around;
+  width: 90%;
+`;
 
 function CharGrid({ data }) {
-  console.log("grid data", data);
+  //   console.log("grid data", data);
 
   return (
-    <div>
+    <SWGrid>
       {data.map(char => {
         return (
           <CharCard
@@ -18,7 +28,7 @@ function CharGrid({ data }) {
           />
         );
       })}
-    </div>
+    </SWGrid>
   );
 }
 export default CharGrid;
