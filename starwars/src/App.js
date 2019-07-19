@@ -37,17 +37,13 @@ const App = () => {
       });
   }, [api]);
 
-  const nextPage = event => {
-    apiNext === null
-      ? console.log("There is no next page")
-      : event && setApi(apiNext);
+  const nextPage = () => {
+    apiNext === null ? console.log("There is no next page") : setApi(apiNext);
     // console.log("clicked next");
   };
 
-  const prevPage = event => {
-    apiPrev === null
-      ? console.log("There is no prev page")
-      : event && setApi(apiPrev);
+  const prevPage = () => {
+    apiPrev === null ? console.log("There is no prev page") : setApi(apiPrev);
     // console.log("clicked prev");
   };
 

@@ -30,7 +30,7 @@ React JS is a UI Component Library made by Facebook that specializes in renderin
 
 - [ ] What does it mean to _think_ in react?
 
-To think in component hiearchy - consider the data flow from parent down to child passing props and state.
+To think in component hiearchy - consider the data flow from parent down to child passing props and state. HTML and JS are unified via JSX.
 
 - [ ] Describe state.
 
@@ -42,7 +42,7 @@ Properties passed down as an object from parent to child components.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
 
-Side effects are anything that happens outside the function we are executing such as API calls. You sync effects in a React component by placing side effects in useEffect() and tying it to objects that the call should be dependent on in order to re-run.
+Side effects are anything that happens outside the function we are executing such as API calls. You sync effects in a React component by placing side effects in useEffect() and tying it to variables that the call should be dependent on in order to re-run.
 
 ## Project Set Up
 
