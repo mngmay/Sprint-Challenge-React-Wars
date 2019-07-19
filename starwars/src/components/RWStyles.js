@@ -36,6 +36,8 @@ export const ButtonsDiv = styled.div`
 
 export const RWButton = styled.button`
   background-color: transparent;
+  outline: none;
+
   ${props =>
     props.type === "prev"
       ? `width: 0;
@@ -76,7 +78,7 @@ export const RWCard = styled.div`
   border: 2px solid #c2693f;
   margin: 10px;
   padding: 10px;
-  background-color: rgba(211, 204, 187, 0.5);
+  background-color: rgba(211, 204, 187, 0.65);
   display: flex;
   flex-direction: column;
   justify-content: center;

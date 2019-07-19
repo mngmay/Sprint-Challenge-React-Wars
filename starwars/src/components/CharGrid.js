@@ -18,6 +18,7 @@ function CharGrid({ data }) {
             skin={char.skin_color}
             eyes={char.eye_color}
             gender={char.gender}
+            bday={char.birth_year}
           />
         );
       })}
