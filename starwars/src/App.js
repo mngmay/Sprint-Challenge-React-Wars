@@ -2,21 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CharGrid from "./components/CharGrid";
 import Buttons from "./components/Buttons";
-import styled from "styled-components";
+import { RWApp, RWHeader, RWSlogan } from "./components/RWStyles";
 import "./App.css";
-
-const RWApp = styled.div`
-  text-align: center;
-  margin-top: 10px;
-  background-color: transparent;
-`;
-
-const RWHeader = styled.h1`
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
-`;
-
-const RWSlogan = styled.h3``;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
