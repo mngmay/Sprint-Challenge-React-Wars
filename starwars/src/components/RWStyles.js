@@ -5,7 +5,6 @@ import styled from "styled-components";
 export const RWApp = styled.div`
   text-align: center;
   margin-top: 10px;
-  background-color: rgba(0, 0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,11 +32,10 @@ export const ButtonsDiv = styled.div`
   display: flex;
   justify-content: space-between;
   width: 30%;
-  background-color: rgba(0, 0, 0, 0);
 `;
 
 export const RWButton = styled.button`
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   ${props =>
     props.type === "prev"
       ? `width: 0;
