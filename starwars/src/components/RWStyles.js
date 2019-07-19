@@ -44,6 +44,7 @@ export const RWButton = styled.button`
 height: 0;
 border-top: 10px solid transparent;
 border-right: 20px solid #641d0b;
+border-left: transparent;
 border-bottom: 10px solid transparent;`
       : null}
 
@@ -53,6 +54,7 @@ border-bottom: 10px solid transparent;`
     height: 0;
     border-top: 10px solid transparent;
     border-left: 20px solid #641d0b;
+    border-right: transparent;
     border-bottom: 10px solid transparent;`
       : null}
 `;
